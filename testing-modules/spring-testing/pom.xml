@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.baeldung</groupId>
+    <groupId>com.baeldung</groupId>
     <artifactId>spring-testing</artifactId>
     <version>0.1-SNAPSHOT</version>
     <name>spring-testing</name>
@@ -15,11 +16,10 @@
     </parent>
 
     <dependencies>
-
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>java-hamcrest</artifactId>
-            <version>${hamcrest.version}</version>
+            <version>${java-hamcrest.version}</version>
         </dependency>
 
         <dependency>
@@ -110,12 +110,11 @@
                 <filtering>true</filtering>
             </resource>
         </resources>
-
     </build>
 
     <properties>
         <!-- testing -->
-        <hamcrest.version>2.0.0.0</hamcrest.version>
+        <java-hamcrest.version>2.0.0.0</java-hamcrest.version>
         <awaitility.version>3.1.6</awaitility.version>
         <junit.jupiter.version>5.5.0</junit.jupiter.version>
         <junit.commons.version>1.5.2</junit.commons.version>
